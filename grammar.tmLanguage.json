@@ -1,0 +1,21 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "RxScript",
+	"patterns": [
+		{ "include": "#comment" },
+		{ "include": "#pragma" }
+	],
+	"repository": {
+		"comment": {
+			"name":"comment.line",
+			"begin": "//",
+			"end": "$"
+		},
+		"pragma": {
+			"name": "comment.line",
+			"begin": "#!",
+			"end": "$"
+		}
+	},
+	"scopeName": "source.rxsc"
+}
